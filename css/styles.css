@@ -1,0 +1,196 @@
+/* AtlasBasket Analytics - Custom Styles */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  --primary-orange: #f97316;
+  --primary-orange-hover: #ea580c;
+  --accent-glow: rgba(249, 115, 22, 0.25);
+  --bg-dark: #090d16;
+  --bg-card: #111827;
+  --bg-card-border: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-dark);
+  color: #f3f4f6;
+  overflow-x: hidden;
+}
+
+code, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(9, 13, 22, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--bg-card-border);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(249, 115, 22, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px 0 var(--accent-glow);
+}
+
+/* Background Gradients & Glows */
+.hero-glow-1 {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(249, 115, 22, 0.18) 0%, rgba(234, 88, 12, 0.05) 50%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-glow-2 {
+  position: absolute;
+  top: 250px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 65%);
+  filter: blur(70px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Court Pattern Overlay */
+.court-pattern {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
+
+/* Orange Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #fed7aa 0%, #f97316 50%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #a5f3fc 0%, #38bdf8 50%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button Pulse effect */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 25px 6px rgba(249, 115, 22, 0.3);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+/* Phone Mockup Frame */
+.mockup-container {
+  position: relative;
+  width: 320px;
+  height: 640px;
+  background: #0b1120;
+  border-radius: 42px;
+  box-shadow: 
+    0 0 0 8px #1f2937,
+    0 0 0 10px #374151,
+    0 25px 50px -12px rgba(0, 0, 0, 0.8),
+    0 0 40px 0 rgba(249, 115, 22, 0.2);
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.mockup-speaker {
+  width: 90px;
+  height: 5px;
+  background: #374151;
+  border-radius: 3px;
+  margin: 12px auto 6px;
+}
+
+.mockup-camera {
+  width: 10px;
+  height: 10px;
+  background: #111827;
+  border: 2px solid #1f2937;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.mockup-screen {
+  width: 100%;
+  height: calc(100% - 24px);
+  background: #0a0f1d;
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mockup-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Radar SVG animation */
+@keyframes radarSpin {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: 40; }
+}
+
+.radar-outline {
+  stroke-dasharray: 4, 4;
+  animation: radarSpin 4s linear infinite;
+}
+
+/* Accordion Smooth Transitions */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+.faq-item.active .faq-content {
+  max-height: 500px;
+  transition: max-height 0.4s ease-in-out;
+}
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+}
+
