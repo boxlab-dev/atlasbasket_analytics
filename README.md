@@ -12,8 +12,8 @@
   <a href="https://atlasbasket.boxlab.gr/">
     <img src="https://img.shields.io/badge/Website-atlasbasket.boxlab.gr-f97316?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Website">
   </a>
-  <a href="https://github.com/boxlab-dev/atlasbasket_analytics/releases/latest/download/atlasbasket-v1.0.2-github.apk">
-    <img src="https://img.shields.io/badge/Download-APK%20(v1.0.2)-22c55e?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
+  <a href="https://github.com/boxlab-dev/atlasbasket_analytics/releases/latest/download/atlasbasket-v1.0.3-github.apk">
+    <img src="https://img.shields.io/badge/Download-APK%20(v1.0.3)-22c55e?style=for-the-badge&logo=android&logoColor=white" alt="Download APK">
   </a>
   <img src="https://img.shields.io/badge/Android-12%2B%20(API%2031%2B)-3b82f6?style=for-the-badge&logo=android&logoColor=white" alt="Android 12+">
 </p>
@@ -69,7 +69,7 @@
 
 ## 📲 Οδηγός Εγκατάστασης (Android)
 
-1. Κατεβάστε το [atlasbasket-v1.0.2-github.apk](https://github.com/boxlab-dev/atlasbasket_analytics/releases/latest/download/atlasbasket-v1.0.2-github.apk).
+1. Κατεβάστε το [atlasbasket-v1.0.3-github.apk](https://github.com/boxlab-dev/atlasbasket_analytics/releases/latest/download/atlasbasket-v1.0.3-github.apk).
 2. Όταν σας ζητηθεί, επιτρέψτε την *«Εγκατάσταση από άγνωστες πηγές»* στο πρόγραμμα περιήγησης (Chrome κλπ.).
 3. Πατήστε **Εγκατάσταση (Install)**.
 4. Ανοίξτε την εφαρμογή και πατήστε **Συγχρονισμός Διοργανώσεων** στην Αρχική Οθόνη.
